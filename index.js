@@ -4,7 +4,7 @@ var zlib = require('zlib'),
     ua = require('universal-analytics'),
     config = require('./config'),
     s3 = new aws.S3({
-        region: 'us-east-1'
+        region: config.region
     });
 
 var bucket = config.bucket,
